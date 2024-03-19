@@ -3,6 +3,9 @@ local player = game.Players.LocalPlayer
 
 -- Создаем локальную переменную для хранения графического интерфейса
 local gui = Instance.new("ScreenGui", player.PlayerGui)
+gui.Name = "h"
+gui.Parent = game:GetService("CoreGui")
+gui.ResetOnSpawn = false
 
 -- Создаем локальную переменную для хранения фрейма меню
 local menu = Instance.new("Frame", gui)
